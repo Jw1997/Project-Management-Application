@@ -14,15 +14,16 @@ export function main(event, context, callback) {
     //             Cognito Identity Pool, we will use the identity id
     //             as the user id of the authenticated user
     // - 'noteId': a unique uuid
-    // - 'permission': The permission level of the file
-    // - 'content': parsed from request body
+    // - 'permission': The permission level of the file, parsed from requestbody
+    // - 'project_description': parsed from request body
     // - 'attachment': parsed from request body
     // - 'createdAt': current Unix timestamp
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
       noteId: uuid.v1(),
-      project_content: data.content,
-      user_information: data.content,
+      project_leader: data.content,
+      project_members: data.content,
+      project_description: data.content,
       project_status: data.content,
       permission: data.content,
       attachment: data.attachment,
