@@ -1,5 +1,5 @@
 {
-  "body": "{\"content\":\"hello world\",\"attachment\":\"hello.jpg\"}",
+  "body": "{\"project_leader\":\"Dummy Leader\",\"project_members\":\"Not Applicable\",\"project_description\":\"Hello World\",\"project_status\":\"Complete\",\"permission\":\"Admin\",\"attachment\":\"hello.jpg\"}",
   "requestContext": {
     "identity": {
       "cognitoIdentityId": "USER-SUB-1234"
